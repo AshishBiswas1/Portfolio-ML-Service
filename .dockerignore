@@ -1,12 +1,12 @@
 .venv/
-venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .pytest_cache/
-.coverage
-htmlcov/
+.git/
+.gitignore
 *.log
+scratch/
+models/*.pt
 models/*.pkl
-!.gitkeep

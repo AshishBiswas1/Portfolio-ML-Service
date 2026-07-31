@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  ml-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-ml-service
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      PORT: 5000
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
